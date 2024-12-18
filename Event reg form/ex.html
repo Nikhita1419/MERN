@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+    <h1>Event Registration Form</h1>
+    <form action="/submit-registration" method="post">
+        <!-- Personal Details -->
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <!-- Event-Specific Details -->
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" name="eventName" required><br><br>
+
+        <label for="eventDate">Event Date:</label>
+        <input type="date" id="eventDate" name="eventDate" required><br><br>
+
+        <label for="session">Preferred Session:</label>
+        <select id="session" name="session">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+        </select><br><br>
+
+        <!-- Address Details -->
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state"><br><br>
+
+        <label for="zip">ZIP Code:</label>
+        <input type="text" id="zip" name="zip"><br><br>
+
+        <!-- Professional/Academic Details -->
+        <label for="organization">Organization/Company Name:</label>
+        <input type="text" id="organization" name="organization"><br><br>
+
+        <label for="jobTitle">Job Title/Designation:</label>
+        <input type="text" id="jobTitle" name="jobTitle"><br><br>
+
+        <label for="institution">Institution Name:</label>
+        <input type="text" id="institution" name="institution"><br><br>
+
+        <!-- Event Requirements -->
+        <label for="foodPreference">Food Preferences:</label>
+        <select id="foodPreference" name="foodPreference">
+            <option value="vegetarian">Vegetarian</option>
+            <option value="nonVegetarian">Non-Vegetarian</option>
+            <option value="vegan">Vegan</option>
+        </select><br><br>
+
+        <label for="accessibility">Accessibility Needs:</label>
+        <textarea id="accessibility" name="accessibility" rows="2" cols="50"></textarea><br><br>
+
+        <label for="tshirtSize">T-Shirt Size:</label>
+        <select id="tshirtSize" name="tshirtSize">
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+            <option value="xl">X-Large</option>
+        </select><br><br>
+
+        <!-- Payment and Confirmation -->
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod">
+            <option value="creditCard">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bankTransfer">Bank Transfer</option>
+        </select><br><br>
+
+        <label for="promoCode">Promo Code:</label>
+        <input type="text" id="promoCode" name="promoCode"><br><br>
+
+        <!-- Additional Information -->
+        <label for="emergencyContact">Emergency Contact:</label>
+        <input type="tel" id="emergencyContact" name="emergencyContact"><br><br>
+
+        <label for="specialRequests">Special Requests:</label>
+        <textarea id="specialRequests" name="specialRequests" rows="2" cols="50"></textarea><br><br>
+
+        <label for="hearAbout">How Did You Hear About Us?</label>
+        <select id="hearAbout" name="hearAbout">
+            <option value="socialMedia">Social Media</option>
+            <option value="website">Website</option>
+            <option value="friend">Friend</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label>
+            <input type="checkbox" name="terms" required>
+            I agree to the <a href="/terms-and-conditions">terms and conditions</a>.
+        </label><br><br>
+
+        <!-- Optional Engagement -->
+        <label for="socialMedia">Social Media Handles:</label>
+        <input type="text" id="socialMedia" name="socialMedia"><br><br>
+
+        <label for="previousParticipation">Have You Attended Our Events Before?</label>
+        <select id="previousParticipation" name="previousParticipation">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="interestAreas">Interest Areas:</label>
+        <textarea id="interestAreas" name="interestAreas" rows="2" cols="50"></textarea><br><br>
+
+        <!-- Captcha and Submission -->
+        <label for="captcha">Verification Code:</label>
+        <input type="text" id="captcha" name="captcha" required><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
